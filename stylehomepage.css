@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 200px;
+}
+
+ 
+.navbar{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(70, 20, 20, o.8);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+    font-style: italic;
+}
+
+.navbar .navbar-nav a {
+    color: black;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover{
+    color: rgb(151, 147, 147) ;
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid rgb(151, 147, 147);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+    
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+    color: black;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: rgb(151, 147, 147);
+}
+
+.hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../chirstmasjm.avif") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    position: relative;
+    margin-bottom: 0%;
+
+}
+
+/*supaya gak kebelah biar nyambung*/
+
+.hero .content{
+    padding: 1.2rem 5%;
+    max-width: 40rem;
+}
+
+.hero .content h1 {
+    font-size: 3em;
+    color: white;
+    line-height: 1.5;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.hero .content p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight: 100;
+    color: white;
+    font-style: unset;
+    
+}
+
+.hero .content .cta{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: black;
+    background-color: antiquewhite ;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 2px rgba(1, 1, 1);
+}
+
+/*about section*/
+
+.card{
+    text-align: center;
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+}
+
+.card h2{
+    padding-top: 5rem;
+}
+.card .card{
+    margin-left: 20%;
+    margin-right: 10%;
+    text-align: center;
+    
+}
+
+.card .card .cologne {
+    width: 20%;
+    height: 4%;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    float: left;
+    text-align: center;
+    position: static;
+    color: black;
+}
+
+.card .card .candles{
+    width: 20%;
+    height: 4%;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    float: left;
+    text-align: center;
+    color: black;
+}
+
+.card .card .diffusers{
+    width: 20%;
+    height: 4%;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    float: left;
+    text-align: center;
+    color: black;
+}
+
+.card .card .gift{
+    width: 20%;
+    height: 4%;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    float: left;
+    text-align: center;
+    color: black;
+}
+
+.about .row .content img{
+    width: 100%;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.about .row .content p {
+    text-align: center;
+    color: black;
+}
+
+footer{
+    background-color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    color: black;
+}
+
+footer .social{
+    padding: 1rem 0;
+    color: black;
+}
+
+.more .row3 .content img{
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.more .row3 .content p {
+    text-align: center;
+    color: black;
+}
+
+.more .row3 .content a{
+    color: black;
+}
+
+.new{
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+.new .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 10rem;
+
+}
+
+.new .box-container .box{
+    flex: 1 1 20rem;
+    box-shadow: 1rem black;
+    position: relative;
+    
+}
+
+.new .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2%;
+    overflow: hidden;
+}
+
+.new .box-container .box .image img{
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+.new .box-container .box .content{
+    padding: 1rem;
+    text-align: center;
+}
+
+.new .box-container .box .content a{
+    color: black;
+}
+
+.new .box-container .box .content p{
+    font-size: 1rem;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    font-weight: 10;
+}
+
+.new h1{
+    text-align: center;
+    padding-top: 5rem;
+}
+
+/*section page pine*/
+
+.main{
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.main .atas {
+    text-align: left;
+    color: gray;
+    margin-left: 2rem;
+    padding-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.main .row{
+    display: flex;
+}
+
+.main .row .main-img{
+    flex: 1 1 45rem;
+}
+
+.main .row .main-img img{
+    width: 80%;
+    margin-left: 10rem;
+}
+
+.main .row .content{
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+    margin-top: 5rem;
+}
+
+.main .row .content h4{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 100;
+}
+
+.main .row .content h3{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.main .row .content p{
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    max-width: 60%;
+}
+
+.main .row .content a{
+    color: black;
+}
+
+.main .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 3rem;
+}
+
+.main .box-container .box{
+    flex: 1 1 20rem;
+    box-shadow: 1rem black;
+    position: relative;
+    
+}
+
+.main .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2%;
+    overflow: hidden;
+}
+
+.main .box-container .box .image video{
+    width: 80%;
+    
+}
+
+.main .box-container .box .contentbox h3{
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.how {
+    margin-left: 6rem;
+    margin-top: 4rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
+    min-width: 15em;
+    position: relative;
+    margin: 2em;
+}
+
+.how{
+    box-sizing: border-box;
+}
+
+.how .select2 {
+    font-size: 2rem;
+    border-bottom: 1px solid black ;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+.how p{
+    padding-bottom: 10rem;
+}
+
+
+
+

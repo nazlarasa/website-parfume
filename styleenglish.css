@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 200px;
+}
+
+ 
+.navbar{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(70, 20, 20, o.8);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+    font-style: italic;
+}
+
+.navbar .navbar-nav a {
+    color: black;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover{
+    color: rgb(151, 147, 147) ;
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid rgb(151, 147, 147);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+    
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+    color: black;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: rgb(151, 147, 147);
+}
+
+.main{
+    margin-top: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.main .atas {
+    text-align: left;
+    color: gray;
+    margin-left: 2rem;
+    padding-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.main .row{
+    display: flex;
+}
+
+.main .row .main-img{
+    flex: 1 1 45rem;
+}
+
+.main .row .main-img img{
+    width: 80%;
+    margin-left: 5rem;
+}
+
+.main .row .content{
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.main .row .content h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 100;
+}
+
+.main .row .content h3{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.main .row .content p{
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    
+}
+
+.main .row .content a{
+    color: black;
+    padding-bottom: 10rem;
+}
+
+.moreimg {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.moreimg .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+
+.moreimg .box-container .box{
+    flex: 1 1 20rem;
+    box-shadow: 1rem black;
+    position: relative;
+    padding-top: 15rem;
+}
+
+.moreimg .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2%;
+    overflow: hidden;
+}
+
+.moreimg .box-container .box .image img{
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 10rem;
+}
+
+.moreimg .box-container .box .image video{
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.tasting {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.tasting .tasting{
+    text-align: left;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid gray;
+}
+
+.tasting .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+
+.tasting .box-container .box{
+    flex: 1 1 20rem;
+    box-shadow: 1rem black;
+    position: relative;
+    
+}
+
+.tasting .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2%;
+    overflow: hidden;
+}
+
+.tasting .box-container .box .image img{
+    width: 70%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+.tasting .box-container .box .content{
+    padding: 1rem;
+    text-align: center;
+}
+
+.tasting .box-container .box .content h4{
+    text-align: center;
+}
+.tasting .box-container .box .content p{
+    font-size: 1rem;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    font-weight: 10;
+}
+
+.use {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.use .use{
+    text-align: left;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid gray;
+    padding-bottom: 5rem;
+}
+
+.use .row{
+    display: flex;
+}
+
+.use .row .main-img{
+    flex: 1 1 45rem;
+}
+
+.use .row .main-img video{
+    width: 50%;
+    margin-left: 5rem;
+    padding-bottom: 10rem;
+}
+
+.use .row .content{
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.use .row .content p{
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: right;
+    margin-left: 10rem;
+}
+
+footer{
+    background-color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+footer .social{
+    padding: 1rem 0;
+    
+}

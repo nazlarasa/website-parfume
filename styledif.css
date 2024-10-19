@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 200px;
+}
+
+ 
+.navbar{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(70, 20, 20, o.8);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+    font-style: italic;
+}
+
+.navbar .navbar-nav a {
+    color: black;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover{
+    color: rgb(151, 147, 147) ;
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid rgb(151, 147, 147);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+    
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+    color: black;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: rgb(151, 147, 147);
+}
+
+.diff{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.diff .heading{
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 4rem;
+    font-weight: 50;
+}
+
+.diff .atas {
+    text-align: left;
+    color: gray;
+    margin-left: 2rem;
+    padding-top: 3rem;
+}
+
+.diff .parag{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid gray;
+}
+
+.diff img{
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.diff .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 3rem;
+}
+
+.diff .box-container .box{
+    flex: 1 1 20rem;
+    box-shadow: 1rem black;
+    position: relative;
+    
+}
+
+.diff .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2%;
+    overflow: hidden;
+}
+
+.diff .box-container .box .image img{
+    width: 100%;
+}
+
+.diff .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.diff .box-container .box .image .icons{
+    position: absolute;
+    bottom: -7rem;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+.diff .box-container .box:hover .image .icons{
+    bottom: 0;
+}
+
+.diff .box-container .box .image .icons a{
+    padding-top: 0.5rem;
+    height: 2rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.diff .box-container .box .content{
+    padding: 1rem;
+    text-align: center;
+}
+
+.diff .box-container .box .content h3{
+    font-size: 1rem;
+    font-weight: 10;
+}
+
+.diff .box-container .box .content .price{
+    font-size: 1rem;
+    font-weight: bolder;
+    padding-top: 1rem;
+    font-weight: 20;
+    padding-bottom: 5rem;
+}
+
+footer{
+    background-color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+footer .social{
+    padding: 1rem 0;
+    
+}

@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 2000px;
+}
+
+ 
+.navbar{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(70, 20, 20, o.8);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+    font-style: italic;
+}
+
+.navbar .navbar-nav a {
+    color: black;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover{
+    color: rgb(151, 147, 147) ;
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid rgb(151, 147, 147);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+    
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+    color: black;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: rgb(151, 147, 147);
+}
+
+.gift{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.gift .heading{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 3rem;
+    font-weight: 100;
+}
+
+.gift .atas {
+    text-align: left;
+    color: gray;
+    margin-left: 2rem;
+    padding-top: 2rem;
+}
+.gift .parag{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid gray;
+}
+
+.gift img{
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 5rem;    
+}
+
+.recipient {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.recipient .recipient{
+    text-align: left;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid gray;
+}
+
+.recipient .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+
+.recipient .box-container .box{
+    flex: 1 1 20rem;
+    box-shadow: 1rem black;
+    position: relative;
+    
+}
+
+.recipient .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2%;
+    overflow: hidden;
+}
+
+.recipient .box-container .box .image img{
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+.recipient .box-container .box .content{
+    padding: 1rem;
+    text-align: center;
+}
+
+.recipient .box-container .box .content p{
+    font-size: 1rem;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    font-weight: 10;
+}
+
+.occasion {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.occasion .occasion{
+    text-align: left;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid gray;
+}
+
+.occasion .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+
+.occasion .box-container .box{
+    flex: 1 1 20rem;
+    box-shadow: 1rem black;
+    position: relative;
+    
+}
+
+.occasion .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2%;
+    overflow: hidden;
+}
+
+.occasion .box-container .box .image img{
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+.occasion .box-container .box .content{
+    padding: 1rem;
+    text-align: center;
+}
+
+.occasion .box-container .box .content p{
+    font-size: 1rem;
+    padding-top: 1rem;
+    font-weight: 10;
+}
+
+.occasion2 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.occasion2 .occasion2{
+    text-align: left;
+    font-size: 1.5rem;
+    padding-top: 3rem;
+}
+
+.occasion2 .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 3rem;
+}
+
+.occasion2 .box-container .box{
+    flex: 1 1 20rem;
+    box-shadow: 1rem black;
+    position: relative;
+    
+}
+
+.occasion2 .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2%;
+    overflow: hidden;
+}
+
+.occasion2 .box-container .box .image img{
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+.occasion2 .box-container .box .content{
+    padding: 1rem;
+    text-align: center;
+}
+
+.occasion2 .box-container .box .content p{
+    font-size: 1rem;
+    padding-top: 1rem;
+    font-weight: 10;
+    padding-bottom: 7rem;
+}
+
+.price {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.price .price{
+    text-align: left;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid gray;
+}
+
+.price .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+
+.price .box-container .box{
+    flex: 1 1 20rem;
+    box-shadow: 1rem black;
+    position: relative;
+    
+}
+
+.price .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2%;
+    overflow: hidden;
+}
+
+.price .box-container .box .image img{
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+.price .box-container .box .content{
+    padding: 1rem;
+    text-align: center;
+}
+
+.price .box-container .box .content p{
+    font-size: 1rem;
+    padding-top: 1rem;
+    font-weight: 10;
+}
+
+.price2 .occasion2{
+    text-align: left;
+    font-size: 1.5rem;
+    padding-top: 3rem;
+}
+
+.price2 .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 3rem;
+}
+
+.price2 .box-container .box{
+    flex: 1 1 20rem;
+    box-shadow: 1rem black;
+    position: relative;
+    
+}
+
+.price2 .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2%;
+    overflow: hidden;
+}
+
+.price2 .box-container .box .image img{
+    width: 100%;
+    
+}
+
+
+.price2 .box-container .box .content{
+    padding: 1rem;
+    text-align: center;
+}
+
+.price2 .box-container .box .content p{
+    font-size: 1rem;
+    padding-top: 1rem;
+    font-weight: 10;
+    padding-bottom: 7rem;
+}
+
+footer{
+    background-color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+footer .social{
+    padding: 1rem 0;
+    
+}
